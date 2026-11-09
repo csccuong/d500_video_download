@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Top Navigation Bar (64dp height matching URLDownloaderPage) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="6dp"
+            android:paddingEnd="12dp">
+
+            <!-- Back Arrow (size 25) -->
+            <ImageButton
+                android:id="@+id/btn_web_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_search"
+                app:tint="@color/app_text_primary" />
+
+            <!-- White Search Input Box (height 40, radius 25) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_white_search_box"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp">
+
+                <EditText
+                    android:id="@+id/et_browser_url"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/enter_url_here"
+                    android:imeOptions="actionSearch"
+                    android:inputType="textUri"
+                    android:singleLine="true"
+                    android:textColor="@color/app_text_black"
+                    android:textColorHint="@color/app_text_gray"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_clear_url"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/icon_close2"
+                    android:visibility="gone"
+                    app:tint="@color/app_text_gray" />
+
+            </LinearLayout>
+
+            <!-- Refresh / Go Button -->
+            <ImageButton
+                android:id="@+id/btn_web_refresh"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_browser"
+                app:tint="@color/app_text_primary" />
+
+        </LinearLayout>
+
+        <!-- Progress Indicator -->
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/web_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:indeterminate="false"
+            app:indicatorColor="@color/app_main"
+            app:trackColor="@color/transparent" />
+
+        <!-- WebView -->
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <!-- Floating 64x64 Download Button (bottom: 24dp, right: 24dp) -->
+    <FrameLayout
+        android:id="@+id/layout_sniffer_fab"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_fab_download_disabled">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_download" />
+
+    </FrameLayout>
+
+</FrameLayout>

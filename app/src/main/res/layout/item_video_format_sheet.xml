@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp">
+
+    <!-- Checkbox Icon -->
+    <ImageView
+        android:id="@+id/ivFormatCheck"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_checkbox_checked" />
+
+    <!-- Video Thumbnail -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="10dp"
+        app:cardBackgroundColor="@color/app_background_item"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/ivFormatThumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/video_thumb" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Title, Format, Size Info -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="6dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvFormatTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="Facebook_Video_123456" />
+
+        <TextView
+            android:id="@+id/tvFormatDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#C4C4C4"
+            android:textSize="11sp"
+            tools:text="MP4 Stream | 1080p" />
+
+        <TextView
+            android:id="@+id/tvFormatSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/app_main"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            tools:text="Size: 18.5 MB" />
+
+    </LinearLayout>
+
+    <!-- Edit Name Icon Button -->
+    <ImageView
+        android:id="@+id/btnFormatEditName"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@null"
+        android:padding="4dp"
+        android:src="@drawable/icon_edit_white" />
+
+</LinearLayout>

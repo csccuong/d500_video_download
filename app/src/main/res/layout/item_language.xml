@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_lang_item"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/bg_card_social"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+    <!-- Radio Indicator -->
+    <ImageView
+        android:id="@+id/iv_lang_radio"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/bg_badge" />
+
+    <!-- Language Title -->
+    <TextView
+        android:id="@+id/tv_lang_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        tools:text="English"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Flag Image (36x26) -->
+    <ImageView
+        android:id="@+id/iv_lang_flag"
+        android:layout_width="36dp"
+        android:layout_height="26dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/flag_english" />
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_52">52dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+</resources>

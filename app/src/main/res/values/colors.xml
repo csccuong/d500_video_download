@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main brand color: #277CFE vibrant blue -->
+    <color name="app_main">#775FF3</color>
+    <color name="app_background">#1B1B33</color>
+    <color name="app_background_item">#2C2C3E</color>
+    <color name="app_bottom_nav">#161625</color>
+    <color name="app_input_bg">#161625</color>
+    <color name="app_card_downloaded">#2E2E39</color>
+
+    <color name="color_primary">#277CFE</color>
+    <color name="color_secondary">#277CFE</color>
+    <color name="color_accent">#F89434</color>
+    <color name="color_background">#1B1B33</color>
+    <color name="color_surface">#2C2C3E</color>
+    <color name="color_surface_variant">#2C2C3E</color>
+    <color name="color_divider">#1FFFFFFF</color>
+    <color name="text_primary">#F1F4F9</color>
+    <color name="text_secondary">#8E8E93</color>
+    
+    <color name="app_text_primary">#F1F4F9</color>
+    <color name="app_text_secondary">#8E8E93</color>
+    <color name="app_text_sub">#6F7084</color>
+    <color name="app_text_gray">#A4A4A4</color>
+    <color name="app_text_black">#101E0E</color>
+    <color name="app_text_dialog_dark">#323232</color>
+
+    <color name="app_yellow_primary">#F89434</color>
+    <color name="app_red_primary">#E11B22</color>
+    <color name="app_green_primary">#58BD7D</color>
+    <color name="brand_primary">#277CFE</color>
+    <color name="brand_primary_soft">#E8F1FD</color>
+    <color name="brand_primary_variant">#5095FF</color>
+
+    <color name="splash_bg">#1E1E2A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

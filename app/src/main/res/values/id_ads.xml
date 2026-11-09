@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <string name="app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>-->
+<!--    <string name="inter_splash_high" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="inter_splash" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="banner_splash" translatable="false">ca-app-pub-3940256099942544/2014213617</string>-->
+
+<!--    <string name="native_language_high" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="native_language" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="native_language_high_click" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="native_language_click" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+
+<!--    <string name="native_onboarding_1" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="native_onboarding_full_1" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="native_onboarding_full_2" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="native_onboarding_4" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+
+<!--    &lt;!&ndash; Placement Ad IDs as specified in plan &ndash;&gt;-->
+<!--    <string name="native_question" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="banner_collap_home" translatable="false">ca-app-pub-3940256099942544/9214589741</string>-->
+<!--    <string name="inter_home" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="native_home" translatable="false">ca-app-pub-3940256099942544/1044960115</string>-->
+<!--    <string name="native_download" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--    <string name="inter_play" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+
+<!--    <string name="resume_open_app" translatable="false">ca-app-pub-3940256099942544/9257395921</string>-->
+
+<!--    <string name="facebook_app_id" translatable="false">1234</string>-->
+<!--    <string name="facebook_client_token" translatable="false">5678</string>-->
+
+
+    <string name="app_id" translatable="false">ca-app-pub-9900730300733887~2952385718</string>
+    <string name="inter_splash_high" translatable="false">ca-app-pub-9900730300733887/9326222378</string>
+    <string name="inter_splash" translatable="false">ca-app-pub-9900730300733887/3857264115</string>
+    <string name="banner_splash" translatable="false">ca-app-pub-9900730300733887/1223361917</string>
+
+    <string name="native_language_high" translatable="false">ca-app-pub-9900730300733887/2544182444</string>
+    <string name="native_language" translatable="false">ca-app-pub-9900730300733887/9924988171</string>
+    <string name="native_language_high_click" translatable="false">ca-app-pub-9900730300733887/8147862914</string>
+    <string name="native_language_click" translatable="false">ca-app-pub-9900730300733887/8696713167</string>
+
+    <string name="native_onboarding_1" translatable="false">ca-app-pub-9900730300733887/2895536231</string>
+    <string name="native_onboarding_full_1" translatable="false">ca-app-pub-9900730300733887/3007216873</string>
+    <string name="native_onboarding_full_2" translatable="false">ca-app-pub-9900730300733887/1694135202</string>
+    <string name="native_onboarding_4" translatable="false">ca-app-pub-9900730300733887/8918019106</string>
+
+    <!-- Placement Ad IDs as specified in plan -->
+    <string name="native_question" translatable="false">ca-app-pub-9900730300733887/6611419960</string>
+    <string name="banner_collap_home" translatable="false">ca-app-pub-9900730300733887/9733416482</string>
+    <string name="inter_home" translatable="false">ca-app-pub-9900730300733887/4757468155</string>
+    <string name="native_home" translatable="false">ca-app-pub-9900730300733887/6611419960</string>
+    <string name="native_download" translatable="false">ca-app-pub-9900730300733887/6611419960</string>
+    <string name="inter_play" translatable="false">ca-app-pub-9900730300733887/4757468155</string>
+
+    <string name="resume_open_app" translatable="false">ca-app-pub-9900730300733887/2322876508</string>
+
+    <string name="facebook_app_id" translatable="false">1582296807003441</string>
+    <string name="facebook_client_token" translatable="false">8a4baaa5c5e93ad3ed739ed01d66f678</string>
+
+</resources>

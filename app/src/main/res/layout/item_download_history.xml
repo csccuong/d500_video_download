@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="80dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_card_history_item"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="10dp"
+    android:paddingTop="9dp"
+    android:paddingEnd="14dp"
+    android:paddingBottom="9dp">
+
+    <!-- Thumbnail container with 8dp rounded corners -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_thumbnail_card"
+        android:layout_width="76dp"
+        android:layout_height="62dp"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/iv_history_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_thumb_placeholder" />
+
+        <ImageView
+            android:id="@+id/iv_play_overlay"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_play" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Info Column (Title + Size/Progress) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_history_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            tools:text="Video Title"
+            android:textColor="@color/white"
+            android:textSize="15.5sp"
+            android:textStyle="bold" />
+
+        <!-- Live Progress Row (Progress Bar + Percentage) -->
+        <LinearLayout
+            android:id="@+id/layout_progress_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/history_progress_bar"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                app:indicatorColor="@color/app_main"
+                app:trackColor="#202738"
+                app:trackCornerRadius="3dp"
+                app:trackThickness="5dp" />
+
+            <TextView
+                android:id="@+id/tv_progress_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                tools:text="80%"
+                android:textColor="#8E95A5"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <!-- Subtitle Info (File size: e.g. 9.82 Mb) -->
+        <TextView
+            android:id="@+id/tv_history_sub_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            tools:text="9.82 Mb"
+            android:textColor="#8E95A5"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <!-- Right Action Container (Checkmark for Progress tab, Pencil for Downloaded tab) -->
+    <FrameLayout
+        android:id="@+id/layout_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- Checkmark circle for completed items in Progress tab -->
+        <ImageView
+            android:id="@+id/iv_check_icon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_circle_check_blue"
+            android:visibility="gone" />
+
+        <!-- Edit/Pencil icon for Downloaded tab -->
+        <ImageButton
+            android:id="@+id/btn_history_edit"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_edit_white" />
+
+    </FrameLayout>
+
+</LinearLayout>
